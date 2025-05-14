@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style 
+      include ../static/style.css
+
+block content
+    section#introsection 
+        div Welcome to Devesh bhai's Dance Academy
+        div.small Eat, Sleep, Dnce Repeat.
+    section#missionsection
+        h2 Our Mission Sectioin
+        div.card
+          h3 Dance the way you like 
+          div.card-box
+            div.card-img
+                img(src='/static/img/1.bg.jpg')
+            div.card-content
+                p This is the best dance academy of the universe
+        div.card
+          h3 Dance Perfect
+          div.card-box
+            div.card-img
+                img(src='/static/img/2.bg.jpg')
+            div.card-content
+                p This is the best dance academy of the universe
+        div.card
+          h3 Dance teaching
+          div.card-box
+            div.card-img
+                img(src='/static/img/3.bg.jpg')
+            div.card-content
+                p This is the best dance academy of the universe
+        
+    section#sponserssection 
+        h2 Our Sponsers
+        div#sponsers
+            img(src='/static/img/logo1.jpg', alt='Sponser Image' class='spimage')
+            img(src='/static/img/logo2.jpg', alt='Sponser Image' class='spimage')
+            img(src='/static/img/logo3.jpg', alt='Sponser Image' class='spimage')
+            img(src='/static/img/logo4.jpg', alt='Sponser Image' class='spimage')
+            img(src='/static/img/logo5.jpg', alt='Sponser Image' class='spimage')
